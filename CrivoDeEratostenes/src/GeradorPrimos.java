@@ -1,8 +1,10 @@
 
 public class GeradorPrimos {
 
-	public String gerarPrimosAte(int i) {
-		if(i==2){
+	public static final int MENOR_PRIMO = 2;
+	
+	public String gerarPrimosAte(int valorMaximo) {
+		if(valorMaximo == MENOR_PRIMO){
 			return "2";
 		}else{
 			return "2,3";

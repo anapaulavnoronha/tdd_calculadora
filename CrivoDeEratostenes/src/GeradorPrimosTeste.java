@@ -1,6 +1,7 @@
 import static org.junit.Assert.*;
 
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
 
 
@@ -14,15 +15,25 @@ public class GeradorPrimosTeste {
 	}
 	
 	@Test
-	public void testeGeradorPrimosAteNumeroDois() {
-		
+	public void testeGeradorPrimosAteNumeroDois(){
 		assertEquals("2", geradorPrimos.gerarPrimosAte(2));
 	}
 	
 	@Test
 	public void testeGeradorPrimosAteNumeroTres(){
+		assertEquals("2,3", geradorPrimos.gerarPrimosAte(3));	
+	}
+	
+	@Test
+	public void rejeitaValorMaximoUm(){
 		
-		assertEquals("2,3", geradorPrimos.gerarPrimosAte(3));
+		try{
+			geradorPrimos.gerarPrimosAte(1);
+			fail("Deveria ter lancado ValorMaximoValidoException");
+		}catch(ValorMaximoValidoException e){
+			assertTrue(true);
+		}
+		
 	}
 
 }
