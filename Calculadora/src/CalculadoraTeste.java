@@ -6,8 +6,14 @@ import org.junit.Test;
 public class CalculadoraTeste {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testeSoma(){
+		
+		Calculadora calculadora = new Calculadora();
+		
+		int num1 = 2;
+		int num2 = 4;
+		
+		assertEquals(6, calculadora.soma(num1, num2));
 	}
 
 }
