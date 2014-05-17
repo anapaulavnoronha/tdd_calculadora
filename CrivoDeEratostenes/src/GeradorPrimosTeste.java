@@ -25,6 +25,11 @@ public class GeradorPrimosTeste {
 	}
 	
 	@Test
+	public void testarGeradorPrimosAteNumeroQuatro() throws ValorMaximoInvalidoException{
+		assertEquals("2,3", geradorPrimos.gerarPrimosAte(4));
+	}
+	
+	@Test
 	public void testaValorMaximoInvalido() throws Exception{
 		try{
 			geradorPrimos.gerarPrimosAte(1);
