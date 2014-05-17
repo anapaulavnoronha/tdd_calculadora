@@ -3,7 +3,8 @@ public class GeradorPrimos {
 
 	public static final int MENOR_PRIMO = 2;
 	
-	public String gerarPrimosAte(int valorMaximo) {
+	public String gerarPrimosAte(int valorMaximo) throws ValorMaximoInvalidoException{
+		
 		if(valorMaximo == MENOR_PRIMO){
 			return "2";
 		}else{
