@@ -9,7 +9,7 @@ public class GeradorPrimosTeste {
 	public void testeGeradorPrimosAteNumeroDois() {
 		
 		GeradorPrimos geradorPrimos = new GeradorPrimos();
-		assertEquals(2, geradorPrimos.gerarPrimosAte(2));
+		assertEquals("2", geradorPrimos.gerarPrimosAte(2));
 	
 	}
 
