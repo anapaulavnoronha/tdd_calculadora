@@ -15,5 +15,16 @@ public class CalculadoraTeste {
 		
 		assertEquals(6, calculadora.soma(num1, num2));
 	}
+	
+	@Test
+	public void testSubtracao(){
+		
+		Calculadora calculadora = new Calculadora();
+		
+		int num1 = 6;
+		int num2 = 4;
+		
+		assertEquals(2, calculadora.subtracao(num1, num2));
+	}
 
 }
