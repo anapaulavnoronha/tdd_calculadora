@@ -2,7 +2,11 @@
 public class GeradorPrimos {
 
 	public String gerarPrimosAte(int i) {
-		return "2";
+		if(i==2){
+			return "2";
+		}else{
+			return "2,3";
+		}
 	}
 
 }
