@@ -43,6 +43,33 @@ public class GeradorPrimosTeste {
 			assertTrue(true);
 		}
 	}
+	
+	@Test
+	public void testeInicializacaoListaDeCandidatos(){
+		int valorMaximo = 5;
+		boolean[] candidatos = geradorPrimos.inicializaListaCandidatos(valorMaximo);
+		assertFalse(candidatos[0]);
+		assertFalse(candidatos[1]);
+		for(int i = geradorPrimos.MENOR_PRIMO; i <= valorMaximo; i++){
+			assertTrue(candidatos[i]);
+		}
+	}
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
